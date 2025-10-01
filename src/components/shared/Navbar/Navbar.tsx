@@ -12,6 +12,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+import Image from "next/image"
 import Link from "next/link"
 
 // Navigation links array to be used in both desktop and mobile menus
@@ -28,7 +29,7 @@ export default function Navbar() {
       <div className="flex max-w-[1140px] mx-auto items-center justify-between gap-4 h-full">
         {/* Left side */}
         <div className="flex">
-            <h1 className="text-2xl text-white">Pixxel<span className="text-green-500">Pallet</span></h1>
+            <Image src="/1.png" width={139} height={49} alt="image not found"/>
         </div>
         {/* Middle side */}
         <div className="h-full flex">
