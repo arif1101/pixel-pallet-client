@@ -1,10 +1,10 @@
+import Home from '@/components/modules/Home/Home'
 import React from 'react'
 
 export default function HomePage() {
   return (
     <div>
-      <h1>this is HomePage
-      </h1>
+      <Home/>
     </div>
   )
 }
