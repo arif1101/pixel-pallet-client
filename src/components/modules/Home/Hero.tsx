@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-        <div className='max-w-[1140px] mx-auto flex gap-12'>
+        <div className='max-w-[1140px] mx-auto flex gap-12 py-24'>
             {/* left section  */}
             <div className='w-3/6 my-auto'>
                 <h2 className='text-[60px] text-yellow-400'>Hello,</h2>

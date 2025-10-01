@@ -2,6 +2,7 @@
 import React from 'react'
 import Hero from './Hero'
 import MyAdvantage from './MyAdvantage'
+import ExperienceSection from './ExperienceSection'
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
         <Hero/>
         {/* my advantage  */}
         <MyAdvantage/>
+        {/* experience section */}
+        <ExperienceSection/>
     </div>
   )
 }

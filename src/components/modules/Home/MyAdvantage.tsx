@@ -13,7 +13,7 @@ export default function MyAdvantage() {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-r from-amber-300/30 via-gray-900 to-purple-900 text-white py-16 px-6">
+    <section className="w-full bg-gradient-to-r from-amber-300/30 via-gray-900 to-purple-900 text-white py-24 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center ">
         {/* Left Side */}
         <div className="relative bg-gradient-to-b from-amber-300 max-w-[350px] max-h-[450px] h-full rounded-[11px] ">
