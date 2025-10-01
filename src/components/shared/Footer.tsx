@@ -7,7 +7,7 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="py-24 bg-gradient-to-r from-red-900/20 to-green-800/30 text-neutral-300 px-6 md:px-20">
+    <footer className="py-24 bg-gradient-to-tr from-red-950/60 via-black to-green-800/80 text-neutral-300 px-6 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-7xl mx-auto">
         
         {/* Brand Section */}

@@ -4,6 +4,7 @@ import Hero from './Hero'
 import MyAdvantage from './MyAdvantage'
 import ExperienceSection from './ExperienceSection'
 import RecentWork from './RecentWork'
+import { LatestBlog } from './LatestBlog'
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
         <ExperienceSection/>
         {/* portfolio carousel */}
         <RecentWork/>
+        {/* recent blog  */}
+        <LatestBlog/>
     </div>
   )
 }
