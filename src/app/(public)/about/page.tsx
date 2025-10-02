@@ -1,9 +1,10 @@
+import About from '@/components/modules/About/About'
 import React from 'react'
 
-export default function About() {
+export default function Page() {
   return (
     <div>
-      <h1 className='text-white'>this is baout me page</h1>
+      <About/>
     </div>
   )
 }

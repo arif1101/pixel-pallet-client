@@ -1,9 +1,10 @@
+import Projects from '@/components/modules/Project/Projects'
 import React from 'react'
 
-export default function Projects() {
+export default function Page() {
   return (
     <div>
-      <h1 className='text-white'>this is projects page</h1>
+      <Projects/>
     </div>
   )
 }
