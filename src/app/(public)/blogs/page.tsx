@@ -1,9 +1,12 @@
+import Blogs from '@/components/modules/Blog/Blogs'
+import Banner from '@/components/shared/Banner'
 import React from 'react'
 
-export default function Blogs() {
+export default function BlogsPage() {
   return (
     <div>
-      <h1 className='text-white'>this is blogs page</h1>
+      <Banner path='Blogs' text='Blogs Page' />
+      <Blogs/>
     </div>
   )
 }
