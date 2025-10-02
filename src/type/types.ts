@@ -14,3 +14,16 @@ export interface Project {
   createdAt: string; // ISO date string
   updatedAt: string; // ISO date string
 }
+
+export interface Blog {
+  id: number;
+  authorId: number;
+  title: string;
+  slug: string;
+  content: string;
+  image: string;
+  tags: string[];
+  createdAt: string;
+  updatedAt: string;
+}
+
