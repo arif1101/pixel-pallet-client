@@ -1,4 +1,3 @@
-"use client"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -12,8 +11,10 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+import { getUserSession } from "@/helpers/getUserSession"
 import Image from "next/image"
 import Link from "next/link"
+import NavbarClient from "./NavbarClient"
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
@@ -21,9 +22,15 @@ const navigationLinks = [
   { href: "/about", label: "ABOUT" },
   { href: "/projects", label: "PROJECT" },
   { href: "/blogs", label: "BLOGS" },
+  { href: "/dashboard", label: "DASHBOARD" },
 ]
 
-export default function Navbar() {
+export default async function Navbar() {
+
+  const session = await getUserSession();
+  const user = session?.data?.user;
+
+
   return (
     <header className="h-[77px] border-b border-b-neutral-800 px-4 md:px-6 sticky top-0 z-50 transition-all duration-300 bg-black">
       <div className="flex max-w-[1140px] mx-auto items-center justify-between gap-4 h-full">
@@ -49,7 +56,8 @@ export default function Navbar() {
         </div>
         {/* Right side */}
         <div className="flex items-center gap-2">
-          <Button className="bg-green-400 hidden md:block">Login</Button>
+          <NavbarClient user={user}/>
+          
           {/* Mobile menu trigger */}
           <Popover>
             <PopoverTrigger asChild>
