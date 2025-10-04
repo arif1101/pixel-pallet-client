@@ -14,8 +14,16 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { getUserSession } from "@/helpers/getUserSession";
+import { redirect } from "next/navigation";
 
-export default function Page() {
+export default async function DashboardPage() {
+  const session = await getUserSession();
+  const user = session?.data?.user;
+  if(!user){
+    redirect("/?error=unauthorized")
+  }
+  
   return (
     <SidebarProvider>
       <AppSidebar/>

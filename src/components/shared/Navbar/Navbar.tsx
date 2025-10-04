@@ -21,8 +21,7 @@ const navigationLinks = [
   { href: "/", label: "HOME", active: true },
   { href: "/about", label: "ABOUT" },
   { href: "/projects", label: "PROJECT" },
-  { href: "/blogs", label: "BLOGS" },
-  { href: "/dashboard", label: "DASHBOARD" },
+  { href: "/blogs", label: "BLOGS" }
 ]
 
 export default async function Navbar() {
@@ -50,6 +49,11 @@ export default async function Navbar() {
                     <Link className="text-white/80 font-semibold text-[14px]" href={link.href}>{link.label}</Link>
                   </NavigationMenuItem>
                 ))}
+                {
+                  user && (
+                  <Link href="" className="text-white/80 font-semibold text-[14px]">DASHBOARD</Link>
+                  )
+                }
               </NavigationMenuList>
             </NavigationMenu>
           </div>

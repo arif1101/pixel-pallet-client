@@ -16,7 +16,7 @@ export async function getUserSession() {
   if (!token) return null;
 
   try {
-    const res = await fetch("http://localhost:5000/api/v1/user/me", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/user/me`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
