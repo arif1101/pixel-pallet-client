@@ -1,7 +1,7 @@
 
 export async function logoutUser() {
   try {
-    const res = await fetch("http://localhost:5000/api/v1/auth/logout", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/user/me`, {
       method: "POST", // or GET depending on your backend setup
       credentials: "include", // very important for cookies
     });
