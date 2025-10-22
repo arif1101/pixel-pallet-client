@@ -16,7 +16,7 @@ export default async function BlogDetailsPage({params}:{params: Promise<{blogId:
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/blog/${blogId}`)
   const {data:blog}:Data = await res.json();
-  console.log(blog)
+  // console.log(blog)
   
 
   return (

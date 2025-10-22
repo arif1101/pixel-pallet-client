@@ -1,10 +1,11 @@
 
 export async function logoutUser() {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/user/me`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/auth/logout`, {
       method: "POST", // or GET depending on your backend setup
       credentials: "include", // very important for cookies
     });
+    console.log(res)
 
     if (!res.ok) {
       throw new Error("Logout failed");

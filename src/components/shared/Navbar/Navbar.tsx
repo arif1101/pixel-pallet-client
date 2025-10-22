@@ -51,7 +51,7 @@ export default async function Navbar() {
                 ))}
                 {
                   user && (
-                  <Link href="" className="text-white/80 font-semibold text-[14px]">DASHBOARD</Link>
+                  <Link href="/dashboard" className="text-white/80 font-semibold text-[14px]">DASHBOARD</Link>
                   )
                 }
               </NavigationMenuList>
